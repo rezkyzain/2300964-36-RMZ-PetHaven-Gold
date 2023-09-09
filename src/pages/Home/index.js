@@ -1,74 +1,48 @@
 
 import React from 'react'
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Aboutme from '../../asset/aboutme.jpeg';
+import Ourservices from '../../asset/ourservices.jpeg';
+
+
 const HomeScreen =  () => {
+
+
+
   return (
     <>
-    <div class="p-5 bg-primary text-white text-center">
-      <h1>PetHaven</h1>
-      <h3>Welcome to Pet Haven!</h3>
-      <p>At Pet Haven, we believe that pets are more than just animals; they're beloved members of your family. Our mission is to provide a safe, nurturing, and loving environment for your furry, feathered, or scaly friends when you can't be there for them.</p> 
-    </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-4">
-          <h2>About Me</h2>
-          <h5>Photo of me:</h5>
-          <div class="fakeimg">Fake Image</div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-          <h3 class="mt-4">Some Links</h3>
-          <p>Lorem ipsum dolor sit ame.</p>
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+    <Navbar />
+    <div className="container mt-5">
+      <div className="row">
+        <div className="col-sm-4">
+          <h2>About Us</h2>
+          <img src={Aboutme} className="aboutmeimg"/>
+          <p>We are a dedicated team of pet enthusiasts who are passionate about the well-being and happiness of your pets. With years of experience in pet care, we understand the unique needs of each pet, whether they're playful puppies, independent cats, or exotic companions. Our team includes trained professionals who provide top-notch care, ensuring your pets are comfortable and content during their stay with us.</p>
+          <h3 className="mt-4">Why You Should Choose Us</h3>
+          <ul>
+            <li>Passion for Pets: We're pet lovers ourselves, so we understand the love and care your pets deserve.</li>
+            <li>Safety First: Your pet's safety is our priority, and we maintain strict standards to ensure their well-being.</li>
+            <li>Personalized Care: We tailor our services to meet the unique needs and preferences of each pet.</li>
+            <li>Convenience: Our convenient location and flexible hours make it easy for you to access our services.</li>
           </ul>
-          <hr class="d-sm-none"/>
+          <hr className="d-sm-none"/>
         </div>
-        <div class="col-sm-8">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2020</h5>
-          <div class="fakeimg">Fake Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 
-          <h2 class="mt-5">TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2020</h5>
-          <div class="fakeimg">Fake Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div className="col-sm-8">
+          <h2>Our Services</h2>
+          <ul>
+            <li><b>Pet Boarding:</b> We offer a comfortable and secure home away from home for your pets when you're traveling or need a reliable place for them to stay.</li>
+            <li><b>Pet Grooming:</b> Pamper your pets with our grooming services, including baths, haircuts, and nail trims, to keep them looking and feeling their best.</li>
+            <li><b>Pet Training:</b> Our experienced trainers can help your furry friend learn essential skills, improve behavior, and build a stronger bond with you.</li>
+            <li><b>Pet Health:</b> We partner with local veterinarians to provide routine check-ups, vaccinations, and minor medical care to keep your pets in optimal health.</li>
+            <li><b>Pet Supplies:</b> Shop for high-quality pet supplies and nutritious food at our on-site store to meet all your pet's needs.</li>
+          </ul>
+          <img src={Ourservices} className="ourservicesimg"/>
         </div>
       </div>
     </div>
-    <div class="mt-5 p-4 bg-dark text-white text-center">
-      <p>Footer</p>
-    </div>
+    <Footer/>
     </>
   );
 
